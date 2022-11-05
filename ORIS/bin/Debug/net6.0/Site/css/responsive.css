@@ -1,0 +1,204 @@
+.responsive_header{
+    display: none;
+}
+.responsive_menu_logo img{
+    max-width: 100%;
+}
+.responsive_header_container{
+    text-align: center;
+}
+.responsive_menu_logo{
+    position: absolute;
+    top: 9px;
+    cursor: pointer;
+    width: 36px;
+    height: 31px;
+    left: 8px;
+}
+.header_burger{
+    display: none;
+}
+@media (max-width:912px){
+    main{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .login{
+        padding-top: 140px;
+    }
+    .container{
+        display: none;
+    }
+    .responsive_header{
+        display: block;
+        background: #171a21;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 20;
+        box-shadow: 0 0 7px 0 rgb(0 0 0 / 75%);
+        overflow: hidden;
+        padding: 13px 8px;
+    }
+    .header_burger.active{
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 50;
+        width: 280px;
+        height: 100%;
+        box-shadow: 0 0 7px 0 rgb(0 0 0 / 75%);
+        background: #171a21;
+        font-size: 22px;
+        min-height: 100%;
+        /* padding: 10px 0px 20px 0px; */
+    }
+    .header_menu{
+        display: block;
+    }
+    .header_menu li{
+        list-style: none;
+        text-align: left;
+        border-top: 1px solid #2f3138;
+        border-bottom: 1px solid #000000;
+        padding: 0 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 2.5em;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .header_link{
+        text-decoration: none;
+        color: #bdbdbd;
+        font-family: "Motiva Sans", Sans-serif;
+        font-weight: 200;
+    }
+    .header_menu_next{
+        display: block;
+        border-top: 1px solid #2f3138;
+    }
+    .header_menu_next li{
+        list-style: none;
+        text-align: left;
+        padding: 0 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 1.8em;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .header_link_2{
+        text-decoration: none;
+        color: #8a8a8a;
+        border: none;
+        font-size: 0.75em;
+        font-family: "Motiva Sans", Sans-serif;
+        font-weight: 200;
+    }
+    .responsive_footer_text{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 10px;
+        white-space: normal;
+        color: #8a8a8a;
+        padding: 0 12px 24px 12px;
+    }
+    .text_valve{
+        font-size: 10px;
+        white-space: normal;
+        color: #8a8a8a;
+        text-align: left;
+        line-height: 1.4;
+    }
+    .logo_valve_footer{
+        display: block;
+        margin-bottom: 5px;
+    }
+    .links a{
+        cursor: pointer;
+        color: #8a8a8a;
+        text-decoration: none;
+    }
+    .links a:hover{
+        color:white;
+    }
+    .footer{
+        display: none;
+    }
+}
+@media(max-width: 700px)
+{
+    main{
+        background: radial-gradient(rgba(24, 26, 33, 0) 0%, #181A21 100%) fixed no-repeat, url(https://store.akamai.steamstatic.com/public/shared/images/joinsteam/new_login_bg_strong_mask_mobile.jpg) center top no-repeat, #181A21;
+        padding: 0px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .login{
+        padding-top: 65px;
+        padding-bottom:10px;
+    }
+    .login__dialog h2{
+        text-align: center;
+        position: relative;
+    }
+    .login__content{
+        min-width: 0px;
+        padding: 10px 32px;
+        background-color: transparent;
+        display:block;
+        flex-direction: column;
+    }
+    .login__added{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 48px;
+    }
+    .login__test{
+        margin: 0px 0px;
+        width: 200px;
+        align-items: center;
+    }
+    .img-qr{
+        display:none;
+    }
+    .test-info{
+        width: 100%;
+    }
+    .test-info p{
+        margin: 0px 0px;
+        text-align: center;
+    }
+    .form-title{
+        padding-bottom: 10px;
+    }
+    .join{
+        flex-direction: column-reverse;
+    }
+    .form-help a{
+        width: 100%;
+    }
+    .login-btn{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .login-btn span{
+        padding: 0px 20px;
+    }
+    .subtext{
+        line-height: 20px;
+    }
+
+}

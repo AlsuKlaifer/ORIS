@@ -1,0 +1,121 @@
+header{
+    font-weight: normal;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 14px;
+    background-color: var(--background-clr);
+    overflow:hidden;
+}
+.container{
+    position: relative;
+    width: 940px;
+    height: 104px;
+    margin: 0px auto;
+    z-index: 402;
+}
+.container div{
+    display:inline-block;
+}
+.header__logo{
+    opacity: 0.7;
+    float: left;
+    padding-top: 30px;
+    margin-right: 40px;
+    width: 176px;
+    height: 44px;
+}
+.header__logo:hover{
+    cursor: pointer;
+}
+.header__navbar{
+    position: absolute;
+    left: 200px;
+}
+.header__navbar a{
+    display: block;
+    position: relative;
+    padding-top: 45px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    line-height: 16px;
+    float: left;
+    font-size: 14px;
+    color: #b8b6b4;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.navbar-link:hover{
+    color: white;
+    cursor: pointer;
+}
+.header__additional{
+    position: absolute;
+    right: 0px;
+    top: 6px;
+    height: 21px;
+    line-height: 21px;
+    color: #b8b6b4;
+    font-size: 11px;
+    z-index: 401;
+    line-height: 24px;
+    vertical-align: top;
+    display: inline-block;
+}
+.header__btn-download{
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    height: 21px;
+    line-height: 24px;
+    margin-right: 3px;
+}
+.header__btn-download:hover{
+    cursor: pointer;
+}
+.additional-download{
+    background-color: #5c7e10;
+    display: inline-block;
+    padding-left: 35px;
+    padding-right: 9px;
+    background-position: 10px 5px;
+    background-image: url(/img/btn_header_installsteam_download.png);
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: #e5e4dc;
+    font-weight: normal;
+}
+.additional-download:hover{
+    color: white;
+}
+.additional-langlogin a{
+    line-height: 24px;
+    color: #b8b6b4;
+    padding: 0 4px;
+    vertical-align: top;
+    text-decoration: none;
+}
+.additional-login:hover{
+    cursor: pointer;
+    color: white;
+}
+.additional-lang{
+    display: inline-block;
+    padding-left: 4px;
+    line-height: 25px;
+    vertical-align: top;
+    padding-right: 18px;
+    /* background-image: url(https://store.cloudflare.steamstatic.com/public/shared/images/popups/btn_arrow_down_padded.png);
+    background-position: right center;
+    background-repeat: no-repeat; */
+    cursor: pointer;
+}
+.additional-lang:hover{
+    cursor: pointer;
+    color: white;
+}
+.btn-lang{
+    margin-left: -7px;
+    margin-top: 7px;
+    width: 17px;
+}

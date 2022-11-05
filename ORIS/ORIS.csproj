@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="week5\" />
+    <None Remove="week7\" />
+    <None Remove="week8\" />
+    <None Remove="week7\Site\" />
+    <None Remove="week7\Site\css\" />
+    <None Remove="week7\Site\img\" />
+    <None Remove="week8\Attributes\" />
+    <None Remove="week8\Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="week5\" />
+    <Folder Include="week7\" />
+    <Folder Include="week8\" />
+    <Folder Include="week7\Site\" />
+    <Folder Include="week7\Site\css\" />
+    <Folder Include="week7\Site\img\" />
+    <Folder Include="week8\Attributes\" />
+    <Folder Include="week8\Controllers\" />
+  </ItemGroup>
+</Project>

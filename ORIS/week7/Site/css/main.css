@@ -1,0 +1,46 @@
+/*----Main----*/
+
+:root{
+    --background-clr: #171a21;
+    --backround-second: #32353c;
+    --href-color: #1999ff;
+    --main-font: #C6D4DF;
+    --second-font: #8F98A0;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Motiva sans", sans-serif;
+}
+body{
+    position: relative;
+}
+body::-webkit-scrollbar {
+    width: 15px;
+}
+body::-webkit-scrollbar-track {
+    background: #202020;
+}
+body::-webkit-scrollbar-corner {
+    background: #202020;
+}
+body::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #434953;
+    border-radius: 10px;
+    z-index: 12;
+    border: 4pxsolidrgba(0,0,0,0);
+    background-clip: padding-box;
+    transition: background-color .32s ease-in-out;
+    margin: 4px;
+    min-height: 32px;
+    min-width: 32px;
+}
+main{
+    width: 100%;
+    /* background: radial-gradient(rgba(24, 26, 33, 0) 0%, #181A21 100%) fixed no-repeat, url(https://store.cloudflare.steamstatic.com/public/shared/images/joinsteam/new_login_bg_strong_mask.jpg) center top no-repeat, #181A21; */
+    background: radial-gradient(rgba(24, 26, 33, 0) 0%, #181A21 100%) fixed no-repeat, url(/img/back.png) center top no-repeat, #181A21;
+    background-color: #171a21;
+    display: block;
+}

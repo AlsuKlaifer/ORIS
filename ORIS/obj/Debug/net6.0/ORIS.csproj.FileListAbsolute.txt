@@ -1,0 +1,15 @@
+/Users/alsufaizova/Projects/ORIS/ORIS/bin/Debug/net6.0/ORIS
+/Users/alsufaizova/Projects/ORIS/ORIS/bin/Debug/net6.0/ORIS.deps.json
+/Users/alsufaizova/Projects/ORIS/ORIS/bin/Debug/net6.0/ORIS.runtimeconfig.json
+/Users/alsufaizova/Projects/ORIS/ORIS/bin/Debug/net6.0/ORIS.dll
+/Users/alsufaizova/Projects/ORIS/ORIS/bin/Debug/net6.0/ORIS.pdb
+/Users/alsufaizova/Projects/ORIS/ORIS/obj/Debug/net6.0/ORIS.csproj.AssemblyReference.cache
+/Users/alsufaizova/Projects/ORIS/ORIS/obj/Debug/net6.0/ORIS.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alsufaizova/Projects/ORIS/ORIS/obj/Debug/net6.0/ORIS.AssemblyInfoInputs.cache
+/Users/alsufaizova/Projects/ORIS/ORIS/obj/Debug/net6.0/ORIS.AssemblyInfo.cs
+/Users/alsufaizova/Projects/ORIS/ORIS/obj/Debug/net6.0/ORIS.csproj.CoreCompileInputs.cache
+/Users/alsufaizova/Projects/ORIS/ORIS/obj/Debug/net6.0/ORIS.dll
+/Users/alsufaizova/Projects/ORIS/ORIS/obj/Debug/net6.0/refint/ORIS.dll
+/Users/alsufaizova/Projects/ORIS/ORIS/obj/Debug/net6.0/ORIS.pdb
+/Users/alsufaizova/Projects/ORIS/ORIS/obj/Debug/net6.0/ORIS.genruntimeconfig.cache
+/Users/alsufaizova/Projects/ORIS/ORIS/obj/Debug/net6.0/ref/ORIS.dll
