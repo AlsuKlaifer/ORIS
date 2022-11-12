@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/alsufaizova/Projects/ORIS/ORIS/ORIS.csproj": {}
+    "C:\\Users\\Asus\\source\\repos\\AlsuKlaifer\\ORIS\\ORIS\\ORIS.csproj": {}
   },
   "projects": {
-    "/Users/alsufaizova/Projects/ORIS/ORIS/ORIS.csproj": {
+    "C:\\Users\\Asus\\source\\repos\\AlsuKlaifer\\ORIS\\ORIS\\ORIS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alsufaizova/Projects/ORIS/ORIS/ORIS.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\AlsuKlaifer\\ORIS\\ORIS\\ORIS.csproj",
         "projectName": "ORIS",
-        "projectPath": "/Users/alsufaizova/Projects/ORIS/ORIS/ORIS.csproj",
-        "packagesPath": "/Users/alsufaizova/.nuget/packages/",
-        "outputPath": "/Users/alsufaizova/Projects/ORIS/ORIS/obj/",
+        "projectPath": "C:\\Users\\Asus\\source\\repos\\AlsuKlaifer\\ORIS\\ORIS\\ORIS.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\source\\repos\\AlsuKlaifer\\ORIS\\ORIS\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/alsufaizova/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,6 +43,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -53,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

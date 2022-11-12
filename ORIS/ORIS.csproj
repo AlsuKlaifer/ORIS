@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -26,5 +26,8 @@
     <Folder Include="week7\Site\img\" />
     <Folder Include="week8\Attributes\" />
     <Folder Include="week8\Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.4" />
   </ItemGroup>
 </Project>

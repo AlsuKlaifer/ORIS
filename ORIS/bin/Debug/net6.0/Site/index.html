@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Войти</title>
-    <!-- <link rel="icon" href="img/steam_icon_logo.ico">  -->
+    <link rel="icon" href="img/steam_icon_logo.ico"> 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/login.css">
@@ -99,23 +99,24 @@
                 <h2>ВОЙТИ</h2>
                 <div class="login__content">
                     <div class="login__form">
-                        <form action="submit">
+                        <form action="accounts/saveAccount" method="post" class="form-example">
                             <div class="form-title">
                                 <h4 class="form-title-h4">ВОЙТИ, ИСПОЛЬЗУЯ ИМЯ АККАУНТА</h4>
                                 <div class="form-control-login">
-                                    <input type="text" class="form-input">
+                                    <input name="login" type="text" class="form-input" id="login">
                                 </div>
                             </div>
                             <div class="form-control-password">
                                 <label for="">ПАРОЛЬ</label>
-                                <input type="password" class="form-input-password" id="password">                        
+                                <input type="password" name="password" class="form-input-password" id="password">                        
                             </div>
                             <div class="form-control">
                                 <input type="checkbox" class="pdn" id="check">
                                 <label for="checkbox" class="pdn-label">Запомнить меня</label>
                             </div>
                             <div class="form-button">
-                                <a href="" class="login-button">Войти</a>
+                                <input type="submit" class="login-button" value="Войти">
+                                <!-- <a href="" class="login-button">Войти</a> -->
                             </div>
                         </form>
                         <div class="login-dialog"></div>

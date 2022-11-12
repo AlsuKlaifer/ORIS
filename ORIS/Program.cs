@@ -2,43 +2,6 @@
 //using ORIS.week7;
 using ORIS.week8;
 
-// week5
-
-//bool appIsRunning = true;
-
-//using (var server = new HttpServer())
-//{
-//    server.Start();
-
-//    while (appIsRunning)
-//    {
-//        Handler(Console.ReadLine()?.ToLower(), server);
-//    }
-//}
-
-//static void Handler(string command, HttpServer server)
-//{
-//    switch (command)
-//    {
-//        case "start":
-//            server.Start();
-//            break;
-
-//        case "restart":
-//            server.Stop();
-//            server.Start();
-//            break;
-
-//        case "stop":
-//            server.Stop();
-//            break;
-//    }
-//}
-
-//Console.Read();
-
-//week7
-
 bool appIsRunning = true;
 
 var settings = new ServerSettings();
