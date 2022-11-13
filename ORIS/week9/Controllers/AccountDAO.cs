@@ -10,32 +10,29 @@ namespace ORIS.week9.Controllers
 
         public void Delete(Account account)
         {
-            orm.AddParameter("@id", account.Id)
-                .ExecuteNonQuery("DELETE FROM [dbo].[Table] WHERE Id = @id");
+            orm.Delete<Account>(account);
         }
 
         public List<Account> GetAll()
-        {
-            return orm.ExecuteQuery<Account>("SELECT * FROM [dbo].[Table]").ToList();
+        { 
+            return orm.Select<Account>().ToList();
         }
 
         public Account GetById(int id)
         {
-            return orm.AddParameter("@id", id).ExecuteQuery<Account>("SELECT * FROM [dbo].[Table] WHERE Id = @id").FirstOrDefault();
+            return orm.AddParameter("@id", id).ExecuteQuery<Account>("SELECT * FROM dbo.Accounts WHERE Id = @id").FirstOrDefault();
         }
 
         public void Insert(Account account)
         {
-            orm.AddParameter("@login", account.Login)
-                .AddParameter("@password", account.Password)
-                .ExecuteNonQuery("INSERT INTO [dbo].[Table] (Login, Password) VALUES (@login, @password)");
+            orm.Insert<Account>(account);
         }
 
         public void Update(Account account, string newPassword)
         {
             orm.AddParameter("@login", account.Login)
                 .AddParameter("@password", newPassword)
-                .ExecuteNonQuery("UPDATE [dbo].[Table] SET Password = @password WHERE Login = @login");
+                .ExecuteNonQuery("UPDATE dbo.Accounts SET Password = @password WHERE Login = @login");
         }
     }
 }

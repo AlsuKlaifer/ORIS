@@ -161,17 +161,16 @@ namespace ORIS.week9
             var test = typeof(HttpController).Name;
 
             string methodURI = strParams[0];
+
             var method = controller
                 .GetMethods()
                 .Where(t => t.GetCustomAttributes(true)
                     .Any(attr => attr.GetType().Name == $"Http{request.HttpMethod}"))
                 .FirstOrDefault(x => request.HttpMethod switch
-                {
-                    "GET" => x.GetCustomAttribute<HttpGET>()?.MethodURI == methodURI,
-                    "POST" => x.GetCustomAttribute<HttpPOST>()?.MethodURI == methodURI
-                });
-
-            object[] queryParams = null;
+            {
+                "GET" => x.GetCustomAttribute<HttpGET>()?.MethodURI == methodURI,
+                "POST" => x.GetCustomAttribute<HttpPOST>()?.MethodURI == methodURI
+            });
 
             NameValueCollection par = new NameValueCollection();
 
@@ -202,22 +201,20 @@ namespace ORIS.week9
                 }
             }
 
+            strParams = new string[par.Count];
+            for (int i = 0; i < strParams.Length; i++)
+            {
+                strParams[i] = par.Get(i);
+            }
+
+            object[] queryParams = method.GetParameters()
+                                .Select((p, i) => Convert.ChangeType(strParams[i], p.ParameterType))
+                                .ToArray();
+
             Console.Write("Attributes: ");
             foreach (string? key in par.AllKeys)
                 Console.Write(key + " : " + par[key] + ", ");
             Console.WriteLine();
-
-            switch (methodURI)
-            {
-                case "getById":
-                    queryParams = new object[] { int.Parse(strParams[1]) };
-                    break;
-                case "getList":
-                    break;
-                case "saveAccount":
-                    queryParams = new object[] { par["login"], par["password"] };
-                    break;
-            }
 
             Console.WriteLine("MethodName: " + method.Name);
             Console.WriteLine("StrParams: " + string.Join(", ", strParams));

@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Reflection;
 using System.Text;
 using System.Text.Json;
-using ORIS.week8.Attributes;
+using ORIS.week9.Attributes;
 using System.Collections.Specialized;
 
 namespace ORIS.week8
@@ -161,6 +161,7 @@ namespace ORIS.week8
             var test = typeof(HttpController).Name;
 
             string methodURI = strParams[0];
+
             var method = controller
                 .GetMethods()
                 .Where(t => t.GetCustomAttributes(true)
@@ -170,8 +171,6 @@ namespace ORIS.week8
                     "GET" => x.GetCustomAttribute<HttpGET>()?.MethodURI == methodURI,
                     "POST" => x.GetCustomAttribute<HttpPOST>()?.MethodURI == methodURI
                 });
-
-            object[] queryParams = null;
 
             NameValueCollection par = new NameValueCollection();
 
@@ -202,27 +201,26 @@ namespace ORIS.week8
                 }
             }
 
+            strParams = new string[par.Count];
+            for (int i = 0; i < strParams.Length; i++)
+            {
+                strParams[i] = par.Get(i);
+            }
+
+            object[] queryParams = method.GetParameters()
+                                .Select((p, i) => Convert.ChangeType(strParams[i], p.ParameterType))
+                                .ToArray();
+
             Console.Write("Attributes: ");
             foreach (string? key in par.AllKeys)
                 Console.Write(key + " : " + par[key] + ", ");
             Console.WriteLine();
 
-            switch (methodURI)
-            {
-                case "getById":
-                    queryParams = new object[] { int.Parse(strParams[1]) };
-                    break;
-                case "getList":
-                    break;
-                case "saveAccount":
-                    queryParams = new object[] { par["login"], par["password"] };
-                    break;
-            }
-
             Console.WriteLine("MethodName: " + method.Name);
             Console.WriteLine("StrParams: " + string.Join(", ", strParams));
             Console.WriteLine("MethodURI: " + methodURI);
             Console.WriteLine("QueryParams: " + queryParams);
+
             var ret = method.Invoke(Activator.CreateInstance(controller), queryParams);
 
             response.ContentType = "Application/json";

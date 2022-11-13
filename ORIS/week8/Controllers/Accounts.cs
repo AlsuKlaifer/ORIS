@@ -14,7 +14,7 @@ namespace ORIS.week8.Controllers
 
             string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SteamDB;Integrated Security=True";
 
-            string sqlExpression = "SELECT * FROM [dbo].[Table]";
+            string sqlExpression = "SELECT * FROM dbo.Accounts";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
@@ -47,7 +47,7 @@ namespace ORIS.week8.Controllers
             List<Account> accounts = new List<Account>();
             string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SteamDB;Integrated Security=True";
 
-            string sqlExpression = "SELECT * FROM [dbo].[Table]";
+            string sqlExpression = "SELECT * FROM dbo.Accounts";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
@@ -82,7 +82,7 @@ namespace ORIS.week8.Controllers
 
                 SqlCommand command = new SqlCommand();
 
-                command.CommandText = "INSERT INTO [dbo].[Table] (Login, Password) VALUES (@login, @password)"; 
+                command.CommandText = "INSERT INTO dbo.Accounts (Login, Password) VALUES (@login, @password)"; 
                 command.Connection = connection;
                 command.Parameters.AddWithValue("@login", login);
                 command.Parameters.AddWithValue("@password", password);

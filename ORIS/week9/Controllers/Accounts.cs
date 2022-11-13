@@ -9,6 +9,7 @@ namespace ORIS.week9.Controllers
     {
         AccountDAO accountDAO = new AccountDAO();
 
+
         [HttpGET("getById")]
         public Account GetAccountById(int id)
         {
@@ -18,14 +19,13 @@ namespace ORIS.week9.Controllers
         [HttpGET("getList")]
         public List<Account> GetAccounts()
         {
-            //return SQLCommands.Select<Account>();
             return accountDAO.GetAll();
         }
 
         [HttpPOST("saveAccount")]
-        public void SaveAccount(Account account)
+        public void SaveAccount(string login, string password)
         {
-            //SQLCommands.Insert<Account>(account);
+            var account = new Account(login, password);
             accountDAO.Insert(account);
         }
 
@@ -39,6 +39,13 @@ namespace ORIS.week9.Controllers
 
         public Account(string login, string password)
         {
+            Login = login;
+            Password = password;
+        }
+
+        public Account(int id, string login, string password)
+        {
+            Id = id;
             Login = login;
             Password = password;
         }
