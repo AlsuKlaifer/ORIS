@@ -18,6 +18,7 @@
     <None Remove="week8\Controllers\" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="week10\" />
     <Folder Include="week5\" />
     <Folder Include="week7\" />
     <Folder Include="week8\" />
