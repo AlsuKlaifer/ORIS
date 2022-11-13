@@ -5,6 +5,8 @@ using System.Text;
 using System.Text.Json;
 using ORIS.week10.Attributes;
 using System.Collections.Specialized;
+using System.Net.Http.Headers;
+using ORIS.week10.Controllers;
 
 namespace ORIS.week10
 {
@@ -222,6 +224,15 @@ namespace ORIS.week10
             Console.WriteLine("QueryParams: " + queryParams);
 
             var ret = method.Invoke(Activator.CreateInstance(controller), queryParams);
+
+            if (method.Name.Equals("PostLogin"))
+            {
+                if (((int)ret > 0))
+                {
+                    var cookie = new Cookie("SessionId", $"IsAuthorize: true, id={(int) ret}");
+                    response.SetCookie(cookie);
+                }
+            }
 
             response.ContentType = "Application/json";
 

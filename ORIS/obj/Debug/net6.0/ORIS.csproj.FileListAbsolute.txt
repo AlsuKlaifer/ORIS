@@ -35,3 +35,6 @@ C:\Users\Asus\Source\Repos\AlsuKlaifer\ORIS\ORIS\bin\Debug\net6.0\runtimes\win\l
 C:\Users\Asus\Source\Repos\AlsuKlaifer\ORIS\ORIS\obj\Debug\net6.0\ORIS.csproj.CopyComplete
 C:\Users\Asus\Source\Repos\AlsuKlaifer\ORIS\ORIS\obj\Debug\net6.0\ORIS.genruntimeconfig.cache
 C:\Users\Asus\Source\Repos\AlsuKlaifer\ORIS\ORIS\obj\Debug\net6.0\ref\ORIS.dll
+C:\Users\Asus\source\repos\AlsuKlaifer\ORIS\ORIS\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\Asus\source\repos\AlsuKlaifer\ORIS\ORIS\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Asus\source\repos\AlsuKlaifer\ORIS\ORIS\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

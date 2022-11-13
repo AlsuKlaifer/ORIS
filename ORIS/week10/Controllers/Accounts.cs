@@ -1,6 +1,9 @@
 ﻿using System.Data.SqlClient;
 using ORIS.week8.Controllers;
 using ORIS.week10.Attributes;
+using System.Net;
+using System.Net.Http.Headers;
+using System.Collections.Specialized;
 
 namespace ORIS.week10.Controllers
 {
@@ -30,10 +33,12 @@ namespace ORIS.week10.Controllers
         }
 
         [HttpPOST("postLogin")]
-        public bool PostLogin(string login, string password)
+        public int PostLogin(string login, string password)
         {
             var account = accountDAO.GetByLogin(login);
-            return account.Password == password;
+            if (account.Password == password)
+                return account.Id;
+            return -1;
         }
     }
 
