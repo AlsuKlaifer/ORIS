@@ -6,9 +6,8 @@ using System.Text.Json;
 using ORIS.week10.Attributes;
 using System.Collections.Specialized;
 using System.Net.Http.Headers;
-using ORIS.week10.Controllers;
 
-namespace ORIS.week10
+namespace ORIS.test
 {
     public class HttpServer : IDisposable
     {
@@ -21,6 +20,90 @@ namespace ORIS.week10
             serverSettings = ServerSettings.Deserialize();
             listener = new HttpListener();
             listener.Prefixes.Add($"http://localhost:" + serverSettings.Port + "/");
+        }
+
+        private void Kr(HttpListenerContext _httpContext)
+        {
+            // объект запроса
+            HttpListenerRequest request = _httpContext.Request;
+            // объект ответа
+            HttpListenerResponse response = _httpContext.Response;
+            var headers = request.Headers;
+
+            IEnumerable<string> headerValues = request.Headers.GetValues("MyCustomID");
+            var value1 = headerValues.FirstOrDefault();
+            var charArr = value1.ToCharArray();
+
+            var dict = MakeDict();
+
+            var newWord = new List<string>();
+            for (int i = 0; i < charArr.Length; i++)
+            {
+                if (dict.ContainsKey(charArr[i]))
+                {
+                    string value;
+                    bool hasValue = dict.TryGetValue(charArr[i], out value);
+                    if (hasValue)
+                    {
+                        newWord.Add(value);
+                    }
+                    else
+                    {
+                        // do something when the value is not there
+                    }
+                }
+            }
+
+            headers.Add("@#!elephant=&.ha-ha", string.Join("", newWord));
+
+        }
+        private List<string> Cesar(List<string> old, int num)
+        {
+
+        }
+        private Dictionary<char, string> MakeDict()
+        {
+            var dictionary = new Dictionary<char, string>();
+            dictionary.Add('а', "a");
+            dictionary.Add('б', "b");
+            dictionary.Add('в', "v");
+            dictionary.Add('г', "g");
+            dictionary.Add('д', "d");
+
+            dictionary.Add('е', "e");
+            dictionary.Add('ё', "yo");
+            dictionary.Add('ж', "j");
+            dictionary.Add('з', "z");
+            dictionary.Add('и', "i");
+
+            dictionary.Add('й', "j");
+            dictionary.Add('к', "k");
+            dictionary.Add('л', "l");
+            dictionary.Add('м', "m");
+            dictionary.Add('н', "n");
+
+            dictionary.Add('о', "o");
+            dictionary.Add('п', "p");
+            dictionary.Add('р', "r");
+            dictionary.Add('с', "s");
+            dictionary.Add('т', "t");
+
+            dictionary.Add('у', "u");
+            dictionary.Add('ф', "f");
+            dictionary.Add('х', "h");
+            dictionary.Add('ц', "ts");
+            dictionary.Add('ч', "ch");
+
+            dictionary.Add('ш', "sh");
+            dictionary.Add('щ', "csh");
+            dictionary.Add('ъ', "'");
+            dictionary.Add('ы', "bI");
+            dictionary.Add('ь', "'");
+
+            dictionary.Add('э', "e");
+            dictionary.Add('ю', "yu");
+            dictionary.Add('я', "ya");
+            return dictionary;
         }
 
         public void Start()
