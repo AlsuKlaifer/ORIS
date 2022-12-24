@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 25.0.1704.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORIS", "ORIS\ORIS.csproj", "{42EA2609-644E-4507-859E-C880B14536F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ORIS", "ORIS\ORIS.csproj", "{42EA2609-644E-4507-859E-C880B14536F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Space", "..\..\..\source\repos\Space\Space\Space.csproj", "{6502981E-BE62-482D-9AC6-9B015706A987}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{42EA2609-644E-4507-859E-C880B14536F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42EA2609-644E-4507-859E-C880B14536F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42EA2609-644E-4507-859E-C880B14536F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6502981E-BE62-482D-9AC6-9B015706A987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6502981E-BE62-482D-9AC6-9B015706A987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6502981E-BE62-482D-9AC6-9B015706A987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6502981E-BE62-482D-9AC6-9B015706A987}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

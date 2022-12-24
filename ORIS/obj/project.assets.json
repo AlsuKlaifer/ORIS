@@ -470,24 +470,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Asus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\Source\\Repos\\AlsuKlaifer\\ORIS\\ORIS\\ORIS.csproj",
+      "projectUniqueName": "C:\\Users\\Asus\\Documents\\GitHub\\ORIS\\ORIS\\ORIS.csproj",
       "projectName": "ORIS",
-      "projectPath": "C:\\Users\\Asus\\Source\\Repos\\AlsuKlaifer\\ORIS\\ORIS\\ORIS.csproj",
+      "projectPath": "C:\\Users\\Asus\\Documents\\GitHub\\ORIS\\ORIS\\ORIS.csproj",
       "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\Source\\Repos\\AlsuKlaifer\\ORIS\\ORIS\\obj\\",
+      "outputPath": "C:\\Users\\Asus\\Documents\\GitHub\\ORIS\\ORIS\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

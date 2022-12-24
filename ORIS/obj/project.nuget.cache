@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wPis05cyKxrxJkt8xUMyBgPZNVp6tHFg6yCCP34e9zk6qYELVxHSIrGeBks/qyguSJNjAWn0hiI17DSPEI3e2g==",
+  "dgSpecHash": "RXL+cPDMMwGrPlJVByFOarbZl9Bb0ktPvfNyhXEqnaLEPG+fFrNWeZtXtOQiBxpWTz8EU/FUN+N/yG9zZWL0kA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asus\\source\\repos\\AlsuKlaifer\\ORIS\\ORIS\\ORIS.csproj",
+  "projectFilePath": "C:\\Users\\Asus\\Documents\\GitHub\\ORIS\\ORIS\\ORIS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
